@@ -56,7 +56,7 @@ def main():
     if my_upload is not None:
         if my_upload.size > MAX_FILE_SIZE:
             st.error(
-                "업로드한 이미지의 크기가 너무 급티나. 5MB보다 작은 크기의 이미지를 업로드 해주세요.")
+                "업로드한 이미지의 크기가 너무 큽니다. 5MB보다 작은 크기의 이미지를 업로드 해주세요.")
         else:
             with st.spinner('배경 제거하는 중'):
                 fix_image(upload=my_upload)
